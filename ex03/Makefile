@@ -1,5 +1,5 @@
-NAME = ex02
-SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
+NAME = ex03
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 INCS = incs
 OBJ_DIR = objs
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))

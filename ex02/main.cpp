@@ -1,15 +1,21 @@
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main()
 {
-	ScavTrap scavTrap1("Lebron James");
-	ScavTrap scavTrap2("Victor Wembanyama");
-	scavTrap1.attack("Victor Wembanyama");
-	scavTrap2.takeDamage(20);
-	scavTrap2.beRepaired(3);
-	scavTrap2.attack("Lebron James");
-	scavTrap1.takeDamage(20);
-	scavTrap1.beRepaired(10);
-	scavTrap1.guardGate();
+	FragTrap fragTrap1("Lebron James");
+	FragTrap fragTrap2("Victor Wembanyama");
+	fragTrap1.attack("Victor Wembanyama");
+	fragTrap2.takeDamage(30);
+	fragTrap2.beRepaired(20);
+	fragTrap2.attack("Lebron James");
+	fragTrap1.takeDamage(30);
+	fragTrap2.attack("Lebron James");
+	fragTrap1.takeDamage(30);
+	fragTrap2.attack("Lebron James");
+	fragTrap1.takeDamage(30);
+	fragTrap2.attack("Lebron James");
+	fragTrap1.takeDamage(30);
+	fragTrap1.beRepaired(10);
+	fragTrap1.highFivesGuys();
 	return 0;
 }
