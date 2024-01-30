@@ -20,7 +20,7 @@ FragTrap::FragTrap(std::string name)
 	std::cout << "FragTrap " << this->_name <<  " constructor called" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap &obj)
+FragTrap::FragTrap(const FragTrap &obj) : ClapTrap(obj)
 {
 	this->_name = obj._name;
 	this->_hitPoint = obj._hitPoint;

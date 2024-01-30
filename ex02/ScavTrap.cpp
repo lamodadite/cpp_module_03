@@ -20,7 +20,7 @@ ScavTrap::ScavTrap(std::string name)
 	std::cout << "ScavTrap " << this->_name <<  " constructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &obj)
+ScavTrap::ScavTrap(const ScavTrap &obj) : ClapTrap(obj)
 {
 	this->_name = obj._name;
 	this->_hitPoint = obj._hitPoint;
